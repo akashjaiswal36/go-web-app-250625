@@ -25,4 +25,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/go-web-app-250625:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/go-web-app-250625:${{github.run_id}}
