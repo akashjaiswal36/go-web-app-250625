@@ -43,7 +43,7 @@ jobs:
     - name: Update tag in manifest/deployment.yaml
       run: |
         cp -r original_manifest/deployment.yaml manifest/
-        sed -i 's/tag: .*/tag: "${{github.run_id}}"/' manifest/deployment.yaml
+        sed -i "s/tag: .*/tag: \"${{github.run_id}}\"/"" manifest/deployment.yaml
 
     - name: Commit and push changes
       run: |
