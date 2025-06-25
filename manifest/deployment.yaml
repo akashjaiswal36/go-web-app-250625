@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: go-web
-        image: ajs3ra8/go-web-app-250625:15880288699
+        image: ajs3ra8/go-web-app-250625:15880632006
         resources:
           requests:
             memory: "64Mi"
